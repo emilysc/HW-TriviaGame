@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+ <html> 
+    <head>
+        <title>Trivia Game</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main class="container">
+        <div><h1>Ultimate Disney Trivia!</h1></div>
+        <!-- http://www.playbuzz.com/vikatoriah11/ultimate-disney-trivia-quiz -->
+
+        <div>
+            <div id="show-number"></div>
+            <button id="Start">Start!</button>
+        </div>
+
+        <div id="result" class="result">
+
+        </div>
+        
+        <div id="quiz">
+        <form name="quiz" onsubmit="return onSubmit()">
+        <div class="question">
+            <!-- Question 1, correct: Snow White and the Seven Dwarf -->
+            <p>What was the first animated film released by Walt Disney?<br>
+            <div>
+            <input type="radio" name="mc1" value="Fantasia">Fantasia<br>
+            <input type="radio" name="mc1" value="Alice in Wonderland">Alice in Wonderland<br>
+            <input type="radio" name="mc1" value="Snow White and the Seven Dwarf">Snow White and the Seven Dwarf<br>
+            <input type="radio" name="mc1" value="Cinderella">Cinderella<br>   
+            </div>
+            </p>
+
+            <!-- Question 2, correct:Prince Philip -->
+            <p>Aurora was naturally startled and apprehensive when the handsome Prince Phillip appeared in the forest. 
+                    However, she was drawn to him before remembering her aunts' rule about not talking to strangers.<br>
+            <div>
+            <input type="radio" name="mc2" value="Pince Setphan">Pince Setphana<br>
+            <input type="radio" name="mc2" value="Prince Philip">Prince Philip<br>
+            <input type="radio" name="mc2" value="Prince Edward">Prince Edward<br>
+            <input type="radio" name="mc2" value="Prince Eric">Prince Eric<br>   
+            </div>
+            </p>
+
+            <!-- Question 3, correct:Midnight -->
+            <p>Cinderella's godmother warns her that the spell will break at the stroke of midnight.<br>
+            <div>
+            <input type="radio" name="mc3" value="Before the sun goes down">Before the sun goes down<br>
+            <input type="radio" name="mc3" value="As soon as morning came">As soon as morning came<br>
+            <input type="radio" name="mc3" value="Midnight">Midnight<br> 
+            </div>
+            </p>
+
+            <!-- Question 4, correct:Six -->
+            <p>Ariel has six sisters who are named Aquata, Andrina, Arista, Attina, Adella and Alana.<br>
+            <div>
+            <input type="radio" name="mc4" value="Six">Six<br>
+            <input type="radio" name="mc4" value="Eight">Eight<br>
+            <input type="radio" name="mc4" value="Seven">Seven<br> 
+            <input type="radio" name="mc4" value="No sisters-she's an only merchild">No sisters-she's an only merchild<br> 
+            </div>
+            </p>
+
+            <!-- Question 5, correct:Alice -->
+            <p>Alice spots a waistcoat-wearing White Rabbit passing by, exclaiming that he is "late for an important date". 
+                Alice gives chase and follows him into a rabbit hole, and falls into a large furnished chasm.<br>
+            <div>
+            <input type="radio" name="mc5" value="Alice">Alice<br>
+            <input type="radio" name="mc5" value="Peter Pan">Peter Pan<br>
+            <input type="radio" name="mc5" value="Aladdin">Aladdin<br> 
+            </div>           
+            </p>
+
+            <!-- Question 6, correct:Mr. Smee -->
+            <p>Mr. Smee is also Captain Hook’s direct confidant. Smee is often clumsy and incapable of actually capturing any of the Lost Boys.<br>
+            <div>
+            <input type="radio" name="mc6" value="Mr. Steve">Mr. Steve<br>
+            <input type="radio" name="mc6" value="Mr. Sir">Mr. Sir<br>
+            <input type="radio" name="mc6" value="Mr. Smee">Mr. Smee<br> 
+            </div>    
+            </p>
+
+            <!-- Question 7, correct:Hawaii -->
+            <p>As Chris Sanders (a head storyboard artist at Disney) said:
+                    “Animation has been set so much in ancient, medieval Europe - so many fairy tales find their roots there, 
+                    that to place it in Hawaii was kind of a big leap." <br> 
+            <div>
+            <input type="radio" name="mc7" value="California">California<br>
+            <input type="radio" name="mc7" value="Hawaii">Hawaii<br>
+            <input type="radio" name="mc7" value="Puerto Rice">Puerto Rice<br> 
+            <input type="radio" name="mc7" value="The Bahamas">The Bahamas<br> 
+            </div>                
+            </p>
+
+            <!-- Question 8, correct:Russell -->
+            <p>Russell (from the movie "Up") says this quote after he meets Carl Fredricksen at his doorstep. <br>
+            <div>
+            <input type="radio" name="mc8" value="Rusell">Rusell<br>
+            <input type="radio" name="mc8" value="Ralph">Ralph<br>
+            <input type="radio" name="mc8" value="Randy">Randy<br> 
+            </div>  
+            </p>
+
+            <!-- Question 9, correct:The Jungle Book -->
+            <p>"The Jungle Book" was released 10 months after his death. 
+            <div>
+            <input type="radio" name="mc9" value="Bambi">Bambi<br>
+            <input type="radio" name="mc9" value="Beauty and the Beast">Beauty and the Beast<br>
+            <input type="radio" name="mc9" value="Lady and the Tramp">Lady and the Tramp<br> 
+            <input type="radio" name="mc9" value="The Jungle Book">The Jungle Book<br> 
+            </div>  
+            </p>
+
+            <!-- Question 10, correct:True -->
+            <p>True or false: The official voices of Mickey and Minnie mouse were married to each other in real life. 
+            <div>       
+            <input type="radio" name="mc10" value="True">True<br>
+            <input type="radio" name="mc10" value="False">False<br>
+            </div>  
+            </p>
+        </div>
+
+        <div>
+            <button type="submit">DONE!</button>
+        </div>
+        </form>
+    </div>
+        <script src="assets/javascript/app.js" aync defer></script>
+    </main>
+    </body>
+</html>

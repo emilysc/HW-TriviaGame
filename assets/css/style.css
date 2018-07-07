@@ -1,0 +1,17 @@
+body {
+    background-image: url("https://cdn3.bigcommerce.com/s-9qugz4w/products/3103/images/2781/DK5928__10473.1401556118.380.500.jpg?c=2");
+}
+
+.container {
+    text-align: center;
+    border-style: solid;
+    border: 3333;
+    border-radius: 5px;
+    margin-left: 120px;
+    margin-right:120px;
+    background-color: lightseagreen;
+}
+
+#quiz{
+    display:none;
+}
